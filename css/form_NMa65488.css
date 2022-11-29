@@ -1,0 +1,82 @@
+/* Form elements style */
+
+/*text in textfields*/
+::placeholder { 
+    color: #790F70;
+    opacity: 0.8; 
+  }
+  /*selected text in select options*/
+select option:checked{
+    color: #790F70;
+    opacity: 0.8;  
+}
+
+
+/*fieldset size*/
+fieldset{
+    max-width: 95%;
+}
+/*arrange items in the form*/
+div{
+    display:flex;
+    flex-flow: row wrap;                
+}
+div>*{
+    width:100%;
+    flex: 1 0 100px; /*can update for responsiveness*/
+    margin: 10px 10px;                
+}
+
+/*legend of the form - "Basic Info" */
+legend{
+    background-color: #790F70;
+    padding: 8px;
+    border-radius: 0.5em;
+    color:#FEF8EE;
+}
+
+  /*Responsive part*/
+/*Mobile mode - nowadays phones are bigger, so I decided to make this "small screen" bigger than usual mobile phone size of 480px max-width.*/
+@media only screen and (max-width: 780px){
+    ::placeholder { 
+        font-size: 0.7em;
+    }
+    select{
+        font-size: 1em; 
+    }
+    optgroup{
+        font-size: 0.7em;
+    }
+}
+
+/*Semi wide or desktop mode*/
+@media only screen and (max-width: 980px){
+    h1{
+       min-width: 140px; 
+       margin-left: -20px;
+       margin-top:-20px;
+       margin-bottom: 10px;;
+    }
+    form{
+        min-width:120px;
+        margin-left:-20px;
+    }
+    
+    div{
+        max-width: 90%;
+    }
+    input[type="submit"] {
+        font-size: 0.4rem;
+        padding: 0.3rem;
+    }
+    ::placeholder { 
+        font-size: 0.5em;
+    }
+    select{
+        font-size: 0.5em; 
+    }
+    optgroup{
+        font-size: 0.5em;
+    }
+    
+}

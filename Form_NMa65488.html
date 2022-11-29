@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Nadiia Marchynska 300365488">
+        <meta charset="utf-8">
+        <script src="script/form_NMa65488.js"></script>
+        <link href="css/styles_NMa65488.css" rel="stylesheet">
+        <link href="css/form_NMa65488.css" rel="stylesheet">
+
+        <title>Project</title>
+        
+    </head>
+    <body>
+        <article>
+            <section id="startSection">
+                    <h1>He`s getting closer, hurry up!</h1>           
+                <form name="myform" action='' method="get" enctype="application/x-www-form-urlencoded">
+                    <fieldset>
+                        <legend>Basic Info</legend>
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" 
+                            placeholder="Enter your name" required>
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" 
+                            placeholder="Enter your name" required>
+                        </div>
+                        <div>
+                            <label for="gender">Gender</label>
+                            <select name="gender" single required>
+                                <optgroup>
+                                    <option value="F">Female</option>
+                                    <option value="M" selected>Male</option>
+                                    <option value="O">Other</option>
+                                </optgroup>
+                            </select>             
+                        </div>
+                        <div>
+                            <label for="age">Age (18+)</label>
+                            <input type="number" name="age" id="age" min="16" max="100" required>                   
+                        </div>
+                        <div>
+                            <!-- notice the different if you use input type submit or button -->
+                            <input type="submit" value="Start Game" 
+                                onClick="return runValidate(this.form)">
+                        </div>
+                </fieldset>
+                </form>
+            </section>
+            <section id="villain_section">
+                <figure>
+                    <img id="index" src="images/villain.png" alt="image of a villain">
+                    <figcaption>Watercolor by <cite><a href="https://opensea.io/loopofart1984">LoopOfArt</a></cite> on <cite><a href="https://opensea.io/collection/artist-rangers">OpenSea.IO</a></cite></figcaption>
+                </figure>
+            </section>
+        </article>
+    </body>
+</html>

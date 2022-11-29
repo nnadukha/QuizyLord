@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Nadiia Marchynska 300365488">
+        <meta charset="utf-8">
+        <link href="css/quiz_NMa65488.css" rel="stylesheet">
+        <script src="script/script_NMa65488.js"></script>
+        
+        <title>Project</title>
+        
+    </head>
+    <body>
+        <article>
+            <section id="container">
+            <div id="questiondiv">
+                    <h1 id="title">Java Quiz Game</h1>
+                    <h2 id="question"></h2>
+                </div>
+            <div id="radio_options">
+                <label for="a" id="answer0"></label>
+                <input type="radio" id="a" name="answer" class="answer" value="6" required>
+                <label for="b" id="answer1"></label>
+                <input type="radio" id="b" name="answer" class="answer" value="7" required>
+                <label for="c" id="answer2"></label>
+                <input type="radio" id="c" name="answer" class="answer" value="*8" required>
+                <label for="d" id="answer3"></label>
+                <input type="radio" id="d" name="answer" class="answer" value="9" required>
+                
+            </div>
+            <div>
+                <input type="button" name="submit" id="myBttn" value="Confirm">
+            </div>
+            <div id="result_placeholder">
+
+            </div>
+            </section>
+            <section id="villain_section">
+                <figure>
+                    <img id="inform" src="images/villain.png" alt="image of a villain"
+                    usemap="#villain">
+                    <map name="villain">
+                        <area id ="headarea" target="" shape="poly" coords="62,49,103,17,157,13,200,46,216,92,204,176,160,206,119,204,80,179,59,111" alt="head" title="head"/>
+                        <area id ="legsarea" target="" shape="poly" coords="98,271,11,342,47,342,123,297,186,275,170,306,147,346,167,345" alt="legs" title="legs"/>
+                        <area id ="handsarea" target="" shape="poly" coords="45,180,25,207,37,238,95,248,88,197,150,218,186,202,214,233,221,166,251,200,229,159,265,191,223,224,217,180,151,218,150,218" alt="hands" title="hands"/>
+                    </map>
+                    <img id="inform2" src="images/villain_nohead.png" alt="image of a villain"
+                    usemap="#villain2">
+                    <map id="inform2map" name="villain2">
+                        <area id ="legsarea2" target="" shape="poly" coords="98,271,11,342,47,342,123,297,186,275,170,306,147,346,167,345" alt="legs" title="legs"/>
+                        <area id ="handsarea2" target="" shape="poly" coords="45,180,25,207,37,238,95,248,88,197,150,218,186,202,214,233,221,166,251,200,229,159,265,191,223,224,217,180,151,218,150,218" alt="hands" title="hands"/>
+                    </map>
+                    <img id="inform3" src="images/villain_nolegs.png" alt="image of a villain"
+                    usemap="#villain3">
+                    <map name="villain3">
+                        <area id ="headarea3" target="" shape="poly" coords="62,49,103,17,157,13,200,46,216,92,204,176,160,206,119,204,80,179,59,111" alt="head" title="head"/>
+                        <area id ="handsarea3" target="" shape="poly" coords="45,180,25,207,37,238,95,248,88,197,150,218,186,202,214,233,221,166,251,200,229,159,265,191,223,224,217,180,151,218,150,218" alt="hands" title="hands"/>
+                    </map>
+                    <img id="inform4" src="images/villain_noarm.png" alt="image of a villain"
+                    usemap="#villain4">
+                    <map name="villain4">
+                        <area id ="legsarea4" target="" shape="poly" coords="98,271,11,342,47,342,123,297,186,275,170,306,147,346,167,345" alt="legs" title="legs"/>
+                        <area id ="headarea4" target="" shape="poly" coords="62,49,103,17,157,13,200,46,216,92,204,176,160,206,119,204,80,179,59,111" alt="head" title="head"/>
+                    </map>
+                    <img id="noheadarm" src="images/villain_noheadarm.png" alt="image of a villain">
+                    <img id="noheadleg" src="images/villain_noheadleg.png" alt="image of a villain">
+                    <img id="nolegarm" src="images/villain_nolegarm.png" alt="image of a villain">
+                    <figcaption>Watercolor by <cite><a href="https://opensea.io/loopofart1984">LoopOfArt</a></cite> on <cite><a href="https://opensea.io/collection/artist-rangers">OpenSea.IO</a></cite></figcaption>
+                </figure>
+                <iframe id="videoYT" width="560" height="315" src="https://www.youtube.com/embed/cE5WK9ZhdKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </article>   
+    </body>
+</html>
